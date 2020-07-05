@@ -1,14 +1,13 @@
+style.production.css
 .form {
   margin: 0 auto;
   text-align: center;
   justify-content: center
 }
-
  .contact info {
    margin: 0 auto;
    text-align: center
 }
-
 .about-container {
   margin: 0 auto;
   text-align: center;
@@ -44,7 +43,7 @@ footer
   /* Sets the line-height to 1.6 */
 }
 .index-container {
-  margin: 0 auto;
+  margin: 25px auto;
   text-align: center;
   justify-content: center;
 }
@@ -144,7 +143,11 @@ footer
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  position: sticky;
+  width: 100%;
 }
+
+
 .grid {
 display: -ms-grid;
 display: grid;
@@ -158,6 +161,7 @@ background-color: LightGrey;
 padding: 10px;
 width: auto;
 }
+
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
@@ -238,12 +242,12 @@ button:focus,
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-
 }
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+      -ms-flex: 0 1 100px;
+          flex: 0 1 100px;
+  margin-left: 20px;
 }
 .page-header .page-header__item:last-child {
   -webkit-box-flex: 1;
@@ -257,4 +261,33 @@ button:focus,
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+}
+.contact-container{
+  text-align: center;
+margin: 25px 25px;
+}
+.form-container {
+  max-width: 500px;
+padding: 25px;
+margin: 0 auto;
+background-color: #ccc;
+}
+.form-field {
+  display: block;
+text-align: center;
+margin: 20px auto;
+}
+.form-field:last-child{
+  text-align: center;
+}
+.form-field input, .form-field textarea{
+  border: 1px solid #000;
+}
+label.standard-label {
+display: block;
+margin-bottom: 15px;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
 }
