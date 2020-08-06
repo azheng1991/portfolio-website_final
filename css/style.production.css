@@ -1,3 +1,7 @@
+.grid {
+  display: flex;
+}
+
 style.production.css .form {
   margin: 0 auto;
   text-align: center;
