@@ -1,7 +1,3 @@
-.grid-container {
-  display: inline-grid;
-}
-
 style.production.css .form {
   margin: 0 auto;
   text-align: center;
@@ -159,7 +155,7 @@ body {
 }
 .grid__item {
   display: inline-block;
-  background-color: LightGrey;
+  background-color: lightslategrey;
   padding: 10px;
   width: auto;
 }
@@ -184,6 +180,7 @@ body {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
