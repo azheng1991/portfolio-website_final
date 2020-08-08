@@ -84,6 +84,11 @@ style.production.css .form {
   text-align: center;
 }
 
+.berlin-illustration {
+  width: 100%;
+  height: auto;
+}
+
 @keyframes color-change {
   from {
     fill: #edc655;
@@ -568,27 +573,23 @@ button:focus,
   text-align: center;
   margin: 25px 25px;
 }
-.form-container {
-  max-width: 500px;
-  padding: 25px;
-  margin: 0 auto;
-  background-color: #ccc;
+/* start flexing */
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
-.form-field {
-  display: inline block;
-  text-align: center;
-  margin: 20px auto;
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
 }
-.form-field:last-child {
-  text-align: center;
-}
-.form-field input,
-.form-field textarea {
-  border: 1px solid #000;
-}
-label.standard-label {
-  display: block;
-  margin-bottom: 15px;
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
 }
 
 .navigation-list__item--active {
