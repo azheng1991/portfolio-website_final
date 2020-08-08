@@ -17,16 +17,7 @@
   </head>
   <body>
     <header class="page-header">
-      <!-- Add Logo here -->
-      <img
-        src="img/celtics.png"
-        width
-        100px
-        height="100"
-        px
-        alt="logo"
-        class="page-header__item"
-      />
+
       <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
@@ -61,43 +52,57 @@
         </ul>
       </nav>
     </header>
+
     <div class="contact-container">
+      <h1 class="header">Contact Me!</h1>
       <div class="form-container">
-        <form action="" method="post" id="contact-form">
-          <div class="form-field">
-            <label class="standard-label" for="contact-email">Email: </label>
-            <input type="email" id="contact-email" required />
-          </div>
-          <div class="form-field">
-            <label class="standard-label" for="contact-phone"
-              >Telephone:
-            </label>
-            <input
-              type="tel"
-              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-              id="contact-phone"
-            />
-          </div>
-          <div class="form-field">
-            <label class="standard-label" for="message">Message: </label>
-            <textarea required maxlength="240"></textarea>
-          </div>
-          <div class="form-field">
-            <input type="submit" id="message" value="Send message" />
-          </div>
-        </form>
+        <form
+        action="https://formspree.io/mlepzqvv"
+        method="POST"
+      >
+        <label>
+          Your email:
+          <input type="text" name="_replyto">
+        </label>
+        <br>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+
+        <!-- your other form fields go here -->
+        <br>
+
+        <button type="submit">Send</button>
+      </form>
       </div>
-      <div>
-        Tel: (857)-231-3760<br />
-        <a href="https://www.linkedin.com/in/zhengallan/"> LinkedIn </a><br />
-        <a href="mailto:azheng34@outlook.com">Email</a>
-</div>
-    <footer class="page-footer">
-      <p>Find me on</p>
-      <img src="img/github_icon.svg" alt="github" />
-      <img src="img/twitter_icon.svg" alt="twitter" />
-      <img src="img/linkedin_icon.svg" alt="linkedin" />
-    </footer>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+
+
+
+
+
+<footer class="page-footer">
+  <p>Find me on</p>
+  <a href="https://github.com/azheng1991">
+    <img src="img/github_icon.svg" alt="github" />
+  </a>
+  <a href="https://medium.com/@azheng34">
+    <img src="img/medium.svg" alt="medium" width="30px" height="30px" />
+  </a>
+  <a href="https://www.linkedin.com/in/zhengallan">
+    <img src="img/linkedin_icon.svg" alt="linkedin" />
+  </a>
+</footer>
     <script src="js/tota11y.min.js"></script>
   </body>
 </html>

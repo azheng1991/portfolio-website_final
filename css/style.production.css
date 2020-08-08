@@ -1,3 +1,69 @@
+.line-1 {
+  position: relative;
+  font-family: "Sofia";
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.goals {
+  width: 10%;
+  margin: auto;
+}
+
+.test {
+  color: yellow;
+  font-family: "Lato";
+  font-size: 20px;
+}
+
+.test2 {
+  color: darkblue;
+  font-family: "lato";
+  font-size: 20px;
+}
+
+.test3 {
+  color: purple;
+  font-family: "Lato";
+  font-size: 20px;
+}
+
+.test4 {
+  color: white;
+  font-family: "Lato";
+  font-size: 20px;
+}
+
 style.production.css .form {
   margin: 0 auto;
   text-align: center;
@@ -17,20 +83,77 @@ style.production.css .form {
   margin: 0 auto;
   text-align: center;
 }
-.about-list {
-  width: 225px;
-  margin: 0 auto;
-  text-align: left;
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 a {
   color: undefined;
 }
 /* no other repetitive values to replace other than color */
-header {
-  background-color: #ecf3f3;
-}
-footer {
-  background-color: #ecf3f3;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  color: white;
+  text-align: center;
 }
 
 body {
@@ -40,7 +163,23 @@ body {
   /* Sets the font size to 16px */
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
+  background: linear-gradient(-45deg, #ee7752, lightblue, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .index-container {
   margin: 25px auto;
   text-align: center;
@@ -51,6 +190,9 @@ body {
 }
 .profile-img img {
   border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 @-webkit-keyframes color-change {
   0% {
@@ -130,6 +272,147 @@ body {
   -webkit-animation: 2s color-change-slowest infinite alternate linear;
   animation: 2s color-change-slowest infinite alternate linear;
 }
+
+#codeconSkills {
+  font-size: 20px;
+  height: auto;
+}
+.codeconSkillbar {
+  height: 50px;
+  position: relative;
+  background: rgba(17, 17, 17, 0.3);
+  margin: 20px auto;
+}
+
+#codeconHTML {
+  width: 70%;
+  animation: Animate-HTML 4s;
+  -webkit-animation: Animate-HTML 4s;
+  -moz-animation: Animate-HTML 4s;
+  -o-animation: Animate-HTML 4s;
+  height: 50px;
+  position: absolute;
+  background-color: slateblue;
+}
+@keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@-webkit-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@-moz-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@-o-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+#codeconCSS {
+  width: 60%;
+  animation: Animate-HTML 4s;
+  -webkit-animation: Animate-HTML 4s;
+  -moz-animation: Animate-HTML 4s;
+  -o-animation: Animate-HTML 4s;
+  height: 50px;
+  position: absolute;
+  background-color: slategray;
+}
+@keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 60%;
+  }
+}
+@-webkit-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 60%;
+  }
+}
+@-moz-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 60%;
+  }
+}
+@-o-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+#codeconjs {
+  width: 65%;
+  animation: Animate-HTML 4s;
+  -webkit-animation: Animate-HTML 4s;
+  -moz-animation: Animate-HTML 4s;
+  -o-animation: Animate-HTML 4s;
+  height: 50px;
+  position: absolute;
+  background-color: darkslateblue;
+}
+@keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 65%;
+  }
+}
+@-webkit-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 65%;
+  }
+}
+@-moz-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 65%;
+  }
+}
+@-o-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 65%;
+  }
+}
+
 .profile__portrait {
   float: left;
   width: 250px;
@@ -147,17 +430,35 @@ body {
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
-.grid__item {
-  display: inline-block;
-  background-color: lightslategrey;
-  padding: 10px;
-  width: auto;
+
+.chat {
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.API img {
+  border-radius: 50%;
+}
+
+.Pokedex img {
+  border-radius: 50%;
+}
+
+.Quizzes img {
+  border-radius: 50%;
+}
+
+.meetup img {
+  border-radius: 50%;
+}
+
+.to-do img {
+  border-radius: 50%;
 }
 
 @media all and (max-width: 500px) {
@@ -181,8 +482,9 @@ body {
     grid-row: auto / auto;
   }
 
-  h1 {
+  .header {
     font-size: 22px;
+    display: center;
   }
 }
 .profile {
@@ -194,7 +496,7 @@ h1 {
   font-weight: 700;
 }
 a {
-  color: #357b70;
+  color: #327a6f;
 }
 a:visited {
   /* visited link */
@@ -273,7 +575,7 @@ button:focus,
   background-color: #ccc;
 }
 .form-field {
-  display: block;
+  display: inline block;
   text-align: center;
   margin: 20px auto;
 }
