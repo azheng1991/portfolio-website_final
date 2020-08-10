@@ -72,7 +72,7 @@
 }
 
 .coder {
-  color: white;
+  color: green;
   font-family: "Lato";
   font-size: 20px;
 }
@@ -172,6 +172,7 @@ a {
 
 body {
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
   font-weight: 400;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -465,7 +466,7 @@ body {
 }
 
 .page-footer {
-  color: white;
+  color: black;
   width: 100%;
   padding: 0;
   display: block;
@@ -484,28 +485,32 @@ body {
 
 .chat {
   width: 350px;
-  border-radius: 10px;
+  border-radius: 25px;
   overflow: hidden;
 }
 
 .API img {
-  border-radius: 50%;
+  border-radius: 25px;
 }
 
 .Pokedex img {
-  border-radius: 50%;
+  border-radius: 25px;
+  ;
 }
 
 .Quizzes img {
-  border-radius: 50%;
+  border-radius: 25px;
+  ;
 }
 
 .meetup img {
-  border-radius: 50%;
+  border-radius: 25px;
+  ;
 }
 
 .to-do img {
-  border-radius: 50%;
+  border-radius: 25px;
+  ;
 }
 
 @media all and (max-width: 500px) {
@@ -650,4 +655,12 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .API screenshot {
   display: inline-block;
+}
+
+input {
+  border-radius: 5px;
+}
+
+#message {
+  border-radius: 5px;
 }
