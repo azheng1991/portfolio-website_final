@@ -763,8 +763,12 @@ body {
   text-align: center;
 }
 
+.work-images {
+  height: 100%;
+  width: 100%;
+}
+
 .chat {
-  width: 350px;
   border-radius: 25px;
   overflow: hidden;
 }
@@ -775,22 +779,18 @@ body {
 
 .Pokedex img {
   border-radius: 25px;
-  ;
 }
 
 .Quizzes img {
   border-radius: 25px;
-  ;
 }
 
 .meetup img {
   border-radius: 25px;
-  ;
 }
 
 .to-do img {
   border-radius: 25px;
-  ;
 }
 
 @media all and (max-width: 500px) {
