@@ -753,14 +753,7 @@ body {
 
 .page-footer {
   color: black;
-  width: 100%;
-  padding: 0;
-  display: block;
-  clear: both;
-  height: 40px;
-  /* added */
-  position: absolute;
-  bottom: 0;
+  height: 142px;
 }
 
 .grid {
