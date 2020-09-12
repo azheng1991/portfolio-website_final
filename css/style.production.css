@@ -61,26 +61,41 @@
 
 .collab {
   color: black;
-  font-family: "Lato";
-  font-size: 20px;
+}
+
+.collab:hover {
+  transform: scale(1.5); /* (150% zoom)*/
 }
 
 .work {
   color: black;
-  font-family: "lato";
-  font-size: 20px;
+}
+
+.work:hover {
+  transform: scale(1.5); /* (150% zoom)*/
 }
 
 .creative {
   color: black;
-  font-family: "Lato";
-  font-size: 20px;
+}
+
+.creative:hover {
+  transform: scale(1.5); /* (150% zoom)*/
 }
 
 .coder {
   color: black;
-  font-family: "Lato";
-  font-size: 20px;
+}
+.coder:hover {
+  transform: scale(1.5); /* (150% zoom)*/
+}
+
+.developer:hover {
+  transform: scale(1.5); /* (150% zoom)*/
+}
+
+.blurb:hover {
+  transform: scale(1.5); /* (150% zoom)*/
 }
 
 style.production.css .form {
