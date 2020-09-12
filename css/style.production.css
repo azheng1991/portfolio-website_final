@@ -61,41 +61,20 @@
 
 .collab {
   color: black;
-}
-
-.collab:hover {
-  transform: scale(1.5); /* (150% zoom)*/
+  animation: collab 10s linear;
+  /* Move it (define the animation) */
 }
 
 .work {
   color: black;
 }
 
-.work:hover {
-  transform: scale(1.5); /* (150% zoom)*/
-}
-
 .creative {
   color: black;
 }
 
-.creative:hover {
-  transform: scale(1.5); /* (150% zoom)*/
-}
-
 .coder {
   color: black;
-}
-.coder:hover {
-  transform: scale(1.5); /* (150% zoom)*/
-}
-
-.developer:hover {
-  transform: scale(1.5); /* (150% zoom)*/
-}
-
-.blurb:hover {
-  transform: scale(1.5); /* (150% zoom)*/
 }
 
 style.production.css .form {
