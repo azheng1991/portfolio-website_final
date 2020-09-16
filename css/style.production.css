@@ -91,7 +91,7 @@ style.production.css .form {
   margin: 0 auto;
   text-align: center;
   justify-content: center;
-  width: 100%;
+  width: 80%;
 }
 
 .about-text {
@@ -948,6 +948,10 @@ svg {
   height: 142px;
 }
 
+.section {
+  width: 80%;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1136,4 +1140,12 @@ input {
 
 #message {
   border-radius: 5px;
+}
+
+h2 {
+  font-family: fantasy;
+}
+
+h1 {
+  font-family: fantasy;
 }
