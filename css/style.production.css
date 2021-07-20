@@ -15,7 +15,7 @@
 /* Animation */
 
 .anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 1000ms steps(44) normal;
 }
 
 @keyframes typewriter {
@@ -23,17 +23,19 @@
     width: 0;
   }
   to {
-    width: 10em;
+    width: 8em;
   }
+  
 }
 
 @keyframes blinkTextCursor {
   from {
-    border-right-color: rgba(255, 255, 255, 0.75);
+    border-right-color: rgba(255, 255, 255, 0.20);
   }
   to {
     border-right-color: transparent;
   }
+  
 }
 
 @media all and (max-width: 500px) {
