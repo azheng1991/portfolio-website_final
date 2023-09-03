@@ -1,109 +1,236 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allan Zheng - Portfolio</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-  </head>
-  <body>
-    <header class="page-header">
 
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item"
-              style="font-family:Helvetica"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem " class="navigation-list__item" style="font-family:Helvetica"
-              >About</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="work.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              style="font-family:Helvetica"
-              >Work</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item" style="font-family:Helvetica"
-              >Contact</a
-            >
-          </li>
-          <li role="resume">
-            <a href onclick="window.open('img/Resume-Allan-Zheng_1_.docx', '_blank')" role="menuitem"
-              class="navigation-list__item"
-              style="font-family:Helvetica">Resume</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allan Zheng - Portfolio</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+</head>
 
-    <section>
+<body>
+  <header class="page-header">
 
-      <h1 style="text-align:center">Work</h1>
-      <div class="grid-container">
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item"
+            style="font-family:Helvetica">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem " class="navigation-list__item" style="font-family:Helvetica">About</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active"
+            style="font-family:Helvetica">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item" style="font-family:Helvetica">Contact</a>
+        </li>
+        <li role="resume">
+          <a href onclick="window.open('img/Resume-Allan-Zheng_1_.docx', '_blank')" role="menuitem"
+            class="navigation-list__item" style="font-family:Helvetica">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+
+    <h1 style="text-align:center">Work</h1>
+    <div class="grid-container">
       <div class="grid">
-         <div class="grid_item">
+        <div class="grid_item">
           <h2>CareerGPT</h2>
           <p>
             <a href="https://www.careergpt.xyz" style="font-family:Helvetica">Check it out!</a>
           </p>
           <br>
-            <img src="img/careergpt.jpg" alt="Inbox" width="400" height="390">
+          <img src="img/careergpt.jpg" alt="Inbox" width="400" height="390">
           <br>
           <br>
           <div style="font-family:Helvetica">
-            A React and Express-based platform that leverages the power of generative AI to expedite the job search process for recruiters and job seekers. 
+            A React and Express-based platform that leverages the power of generative AI to expedite the job search
+            process for recruiters and job seekers.
+            <br>
+          </div>
+        </div>
+        <div class="grid_item">
+          <h2>MyChatApp</h2>
+          <p>
+            <a href="https://trello.com/b/2rKDOVmw/achievement-5" style="font-family:Helvetica">Kanban Board Link </a>
+
+            <br />
+            <a href="https://github.com/azheng1991/MyChat" target="_blank" style="font-family:Helvetica">Github Link</a>
+
+          </p>
           <br>
+          <div class="chat">
+            <video width="400" height="375" controls>
+              <source src="img/5.6.mp4" alt="Chat App" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <br>
+
+          </div>
+          </br>
+          <br>
+          <div style="font-family:Helvetica">
+            A React Native chat app that allows users to send and receive data asynchronously to Google Firestore,
+            allowing users to use the app offline, message, send and take pictures, and share location details.
+            <br>
           </div>
         </div>
 
-       <div class="grid_item">
+        <div class="grid_item">
+          <h2>Movie API</h2>
+          <p>
+            <a href="https://desolate-forest-59381.herokuapp.com/client" target="_blank"
+              style="font-family:Helvetica">Check It Out!</a>
+            <br />
+            <a href="https://github.com/azheng1991/movie_api" target="_blank" style="font-family:Helvetica">Github
+              Link</a>
+          </p>
+          <div class="API">
+            <img src="img/API.PNG" alt="movieAPI" />
+          </div>
+          <br />
+          <br />
+          <div style="font-family:Helvetica">
+            A web app that uses the MERN tech stack to fetch movie data from a custom API
+            allowing users to register, log-in, add and delete movies from their favorites.
+          </div>
+        </div>
+
+        <div class="grid_item">
+          <h2>Pokedex App</h2>
+          <p>
+            <a href="https://azheng1991.github.io/Pokedex--Simple-JQuery-App-/" target="_blank"
+              style="font-family:Helvetica">Check It Out!</a>
+            <br>
+            <a href="https://github.com/azheng1991/Pokedex--Simple-JQuery-App-" target="_blank"
+              style="font-family:Helvetica">Github Link</a>
+          </p>
+          <div class="Pokedex">
+            <img src="img/pokedex.PNG" alt="wigglytuff">
+          </div>
+          <br />
+          <br>
+          <div style="font-family:Helvetica">
+            A web app that uses JQuery to fetch Pokemon data in modal form from an online API.
+          </div>
+        </div>
+
+        <div class="grid_item">
+          <h2>MyQuizApp</h2>
+          <p>
+            <a href="https://azheng1991.github.io/MyQuizApp-Angular/" target="_blank"
+              style="font-family:Helvetica">Check It Out!</a>
+            <br />
+            <a href="https://github.com/azheng1991/MyQuizApp-Angular/" target="_blank"
+              style="font-family:Helvetica">Github Link</a>
+          <div class="Quizzes">
+            <img src="img/quizzes.png" alt="Quizzes">
+          </div>
+          </p>
+          <br />
+          <div style="font-family:Helvetica">
+            A web app that uses the JavaScript framework Angular to create a series of quizzes that test user's
+            knowledge of COVID-19 and basic math.
+          </div>
+        </div>
+
+        <div class="grid_item">
+          <h2>Meetup App</h2>
+          <p>
+            <a href="https://azheng1991.github.io/meetup/?code=3fd0bc1da080f5684f26a905414bf50b" target="_blank"
+              style="font-family:Helvetica">Check It Out!</a>
+            <br />
+            <a href="https://github.com/azheng1991/meetup" target="_blank" style="font-family:Helvetica">Github Link</a>
+
+          <div class="meetup">
+            <img src="img/meetup.PNG" alt="Quizzes">
+          </div>
+          <br />
+          <br>
+          <div style="font-family:Helvetica">
+            A progressive web app built using React through a TDD-approach that uses the Meetup API to fetch and display
+            data about upcoming events, authenticating and authorizing the user through serverless functions hosted on
+            AWS Lambda.
+          </div>
+        </div>
+
+        <div class="grid_item">
+          <h2>To-Do List</h2>
+          <p>
+            <a href="https://cranky-villani-f33e2f.netlify.app/" target="_blank" style="font-family:Helvetica">Check It
+              Out!</a>
+            <br />
+            <a href="https://github.com/azheng1991/To-Do-App-Vue.js-" target="_blank"
+              style="font-family:Helvetica">Github Link</a>
+          </p>
+
+          <div class="to-do">
+            <img src="img/todo.PNG" alt="to-do list">
+          </div>
+          <br />
+          <br>
+          <div style="font-family:Helvetica">
+            A web app that uses the JavaScript library Vue to allow users to create a list of to-do's, edit the list,
+            mark as complete, and delete the to-do.
+          </div>
+        </div>
+
+        <div class="grid_item">
+          <h2>Tic-Tac-Toe</h2>
+          <p>
+            <a href="https://infallible-meitner-0153bf.netlify.app/" target="_blank" style="font-family:Helvetica">Check
+              It Out!</a>
+            <br />
+            <a href="https://github.com/azheng1991/Tic-Tac-Toe" target="_blank" style="font-family:Helvetica">Github
+              Link</a>
+          </p>
+
+          <div class="to-do">
+            <img src="img/tictactoe.PNG" alt="Tic-Tac-Toe board">
+          </div>
+          <br />
+          <div style="font-family:Helvetica">
+            Created a web app using JavaScript and JQuery that allows users to play their favorite childhood playground
+            game: Tic-Tac-Toe! The game is fully functional on mobile through expo.
+          </div>
+        </div>
+        <div class="grid_item">
           <h2>Solidity Kickstarter V2.0</h2>
           <p>
-            <a href="https://remix.ethereum.org/#version=builtin&optimize=false&runs=200&gist=b9f58c98dc2a9a443861fe96cd99e216" style="font-family:Helvetica">Check it out!</a>
+            <a href="https://remix.ethereum.org/#version=builtin&optimize=false&runs=200&gist=b9f58c98dc2a9a443861fe96cd99e216"
+              style="font-family:Helvetica">Check it out!</a>
           </p>
-          <br>          
+          <br>
           <div class="Kickstarter">
             <img src="img/Kickstarter.PNG" alt="Inbox" width="400" height="390">
           </div>
           <br>
           <br>
           <div style="font-family:Helvetica">
-          The capstone project of Stephen Grider's course on ethereum smart contracts. Here, we are introduced to the concept of campaign factories as vehicles by which campaigns can be deployed without 
-          costing gas to the individual hosting the platform on the blockchain network. This project attempts to solve the problem of lack of control in regards to fund disbursement after raising on the kickstarter platform
-          through functions in which a manager creates requests that must be approved with majority vote by the contributors. I think this is a brilliant solution to a real-world problem and effectively depicts 
-          the power of smart contract technology in securing transactions and building trust within the users of a specific platform. As with previous projects, I have commented out the functions within the code in order
-          to demonstrate my understanding of what each function is doing (please see contract file, script files, and test file).
-          <br>
+            The capstone project of Stephen Grider's course on ethereum smart contracts. I have commented out the
+            functions within the code in order
+            to demonstrate my understanding of what each function is doing (please see contract file, script files, and
+            test file).
+            <br>
           </div>
         </div>
-       
 
-          <div class="grid_item">
+
+        <div class="grid_item">
           <h2>Solidity Lottery Contract</h2>
           <p>
-            <a href="https://remix.ethereum.org/#version=builtin&optimize=false&runs=200&gist=cc59f14b0361a0505f87d0f50f3c34b4" style="font-family:Helvetica">Check it out!</a>
+            <a href="https://remix.ethereum.org/#version=builtin&optimize=false&runs=200&gist=cc59f14b0361a0505f87d0f50f3c34b4"
+              style="font-family:Helvetica">Check it out!</a>
           </p>
           <br>
           <div class="Lottery">
@@ -112,16 +239,19 @@
           <br>
           <br>
           <div style="font-family:Helvetica">
-          A slightly more advanced contract that was also examined as part of Stephen Grider's course. In this contract, I am introduced to the concept of restricted functions, which builds in a layer of security to the smart contract. I am also introduced to the require function
-          which ensures certain conditions are met before a function is run.
-          <br>
+            A slightly more advanced contract that was also examined as part of Stephen Grider's course. In this
+            contract, I am introduced to the concept of restricted functions, which builds in a layer of security to the
+            smart contract. I am also introduced to the require function
+            which ensures certain conditions are met before a function is run.
+            <br>
           </div>
         </div>
 
-          <div class="grid_item">
+        <div class="grid_item">
           <h2>Solidity Inbox Contract</h2>
           <p>
-            <a href="https://remix.ethereum.org/#version=builtin&optimize=false&runs=200&gist=22316ceb6e6e240651b0f69c26aed6e2" style="font-family:Helvetica">Check it out!</a>
+            <a href="https://remix.ethereum.org/#version=builtin&optimize=false&runs=200&gist=22316ceb6e6e240651b0f69c26aed6e2"
+              style="font-family:Helvetica">Check it out!</a>
           </p>
           <br>
           <div class="Inbox">
@@ -130,172 +260,24 @@
           <br>
           <br>
           <div style="font-family:Helvetica">
-          The very first smart contract I examined as part of Stephen Grider's course "Ethereum and Solidity: The Complete Developer's Course." In this contract, Stephen makes use of the web3 library and deploys the contract on the rinkby test network. I have commented out the code in the test file as well as the contract itself to prove my understanding of each function.
-          <br>
-          </div>
-        </div>
-
-
-        <div class="grid_item">
-          <h2>MyChatApp</h2>
-          <p>
-            <a href="https://trello.com/b/2rKDOVmw/achievement-5" style="font-family:Helvetica">Kanban Board Link </a>
-
-            <br />
-            <a href="https://github.com/azheng1991/MyChat" target="_blank" style="font-family:Helvetica"
-              >Github Link</a
-            >
-
-          </p>
-          <br>
-          <div class="chat">
-            <video width="400" height="375" controls>
-              <source src="img/5.6.mp4" alt="Chat App" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
+            The very first smart contract I examined as part of Stephen Grider's course "Ethereum and Solidity: The
+            Complete Developer's Course." In this contract, Stephen makes use of the web3 library and deploys the
+            contract on the rinkby test network. I have commented out the code in the test file as well as the contract
+            itself to prove my understanding of each function.
             <br>
-
-        </div>
-          </br>
-          <br>
-          <div style="font-family:Helvetica">
-          A React Native chat app that allows users to send and receive data asynchronously to Google Firestore, allowing users to use the app offline, message, send and take pictures, and share location details.
-          <br>
           </div>
         </div>
 
-          <div class="grid_item">
-          <h2>Movie API</h2>
-          <p>
-            <a href="https://desolate-forest-59381.herokuapp.com/client"
-            target="_blank" style="font-family:Helvetica">Check It Out!</a
-          >
-          <br />
-          <a href="https://github.com/azheng1991/movie_api"
-          target="_blank" style="font-family:Helvetica">Github Link</a
-          >
-        </p>
-        <div class="API">
-          <img src="img/API.PNG" alt="movieAPI"/>
-        </div>
-        <br />
-      <br/>
-        <div style="font-family:Helvetica">
-        A web app that uses the MERN tech stack to fetch movie data from a custom API
-        allowing users to register, log-in, add and delete movies from their favorites.
-          </div>
-        </div>
 
-        <div class="grid_item">
-          <h2>Pokedex App</h2>
-          <p>
-            <a href="https://azheng1991.github.io/Pokedex--Simple-JQuery-App-/"
-            target="_blank" style="font-family:Helvetica">Check It Out!</a
-            >
-            <br>
-            <a href="https://github.com/azheng1991/Pokedex--Simple-JQuery-App-"
-            target="_blank" style="font-family:Helvetica">Github Link</a
-            >
-          </p>
-          <div class="Pokedex">
-            <img src="img/pokedex.PNG" alt="wigglytuff">
-          </div>
-          <br />
-          <br>
-          <div style="font-family:Helvetica">
-          A web app that uses JQuery to fetch Pokemon data in modal form from an online API.
-        </div>
-        </div>
 
-        <div class="grid_item">
-          <h2>MyQuizApp</h2>
-          <p>
-            <a href="https://azheng1991.github.io/MyQuizApp-Angular/"
-            target="_blank" style="font-family:Helvetica">Check It Out!</a>
-          <br />
-          <a href="https://github.com/azheng1991/MyQuizApp-Angular/"
-          target="_blank" style="font-family:Helvetica">Github Link</a
-          >
-          <div class="Quizzes">
-            <img src="img/quizzes.png" alt="Quizzes">
-          </div>
-        </p>
-        <br />
-        <div style="font-family:Helvetica">
-        A web app that uses the JavaScript framework Angular to create a series of quizzes that test user's knowledge of COVID-19 and basic math.
-          </div>
-        </div>
-
-        <div class="grid_item">
-          <h2>Meetup App</h2>
-          <p>
-            <a href="https://azheng1991.github.io/meetup/?code=3fd0bc1da080f5684f26a905414bf50b"
-            target="_blank" style="font-family:Helvetica">Check It Out!</a
-          >
-          <br />
-          <a href="https://github.com/azheng1991/meetup"
-          target="_blank" style="font-family:Helvetica">Github Link</a
-          >
-
-        <div class="meetup">
-          <img src="img/meetup.PNG" alt="Quizzes">
-        </div>
-        <br />
-        <br>
-        <div style="font-family:Helvetica">
-        A progressive web app built using React through a TDD-approach that uses the Meetup API to fetch and display data about upcoming events, authenticating and authorizing the user through serverless functions hosted on AWS Lambda.
-        </div>
-    </div>
-
-        <div class="grid_item">
-          <h2>To-Do List</h2>
-          <p>
-            <a href="https://cranky-villani-f33e2f.netlify.app/"
-            target="_blank" style="font-family:Helvetica">Check It Out!</a
-          >
-          <br />
-          <a href="https://github.com/azheng1991/To-Do-App-Vue.js-"
-          target="_blank" style="font-family:Helvetica">Github Link</a
-          >
-        </p>
-
-        <div class="to-do">
-          <img src="img/todo.PNG" alt="to-do list">
-        </div>
-        <br />
-        <br>
-        <div style="font-family:Helvetica">
-        A web app that uses the JavaScript library Vue to allow users to create a list of to-do's, edit the list, mark as complete, and delete the to-do.
-        </div>
-       </div>
-
-       <div class="grid_item">
-        <h2>Tic-Tac-Toe</h2>
-        <p>
-          <a href="https://infallible-meitner-0153bf.netlify.app/"
-          target="_blank" style="font-family:Helvetica">Check It Out!</a
-        >
-        <br />
-        <a href="https://github.com/azheng1991/Tic-Tac-Toe"
-        target="_blank" style="font-family:Helvetica">Github Link</a
-        >
-      </p>
-
-      <div class="to-do">
-        <img src="img/tictactoe.PNG" alt="Tic-Tac-Toe board">
-      </div>
-      <br />
-      <div style="font-family:Helvetica">
-      Created a web app using JavaScript and JQuery that allows users to play their favorite childhood playground game: Tic-Tac-Toe! The game is fully functional on mobile through expo.
-      </div>
-     </div>
 
 
 
       </div>
-    </section>
+  </section>
   </div>
 
-    <script src="js/tota11y.min.js"></script>
-  </body>
+  <script src="js/tota11y.min.js"></script>
+</body>
+
 </html>
