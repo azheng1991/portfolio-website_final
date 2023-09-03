@@ -185,17 +185,6 @@ button:focus,
   margin-left: 15px;
 }
 
-.text {
-  font-size: 20px;
-  display: inline-block;
-  border: 2px solid #000;
-  border-radius: 50%;
-  padding: 10px;
-  transition: transform 0.5s;
-}
 
-.text:hover {
-  transform: scale(1.5);
-}
 
 
