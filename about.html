@@ -1,66 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Allan Zheng - About Me!</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <style>
+        /* Copy the styles from the first HTML here */
+        a:hover, p:hover, li:hover {
+            transform: scale(1.1);
+        }
+        .navigation-list__item {
+            text-decoration: none;
+            display: inline-block;
+        }
+        .navigation-list__item:hover {
+            text-decoration: none;
+        }
+        .navigation-list__item[role="menuitem"] {
+            cursor: pointer;
+            color: #fff;
+        }
+        /* Add styles for the navigation links */
+.nav-link {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-family: Helvetica; /* You can add this style to avoid repetition */
+}
+
+/* Style for anchor tags when hovered */
+.nav-link:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+    </style>
   </head>
   <body>
     <header class="page-header">
       <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
-            <a
-              href="index.html"
-              role="menu item"
-              class="navigation-list__item navigation-list__item"
-              style="font-family: Helvetica"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="about.html"
-              role="active navigation element"
-              class="navigation-list__item--active"
-              style="font-family: Helvetica"
-              >About</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="work.html"
-              role="menu item"
-              class="navigation-list__item navigation-list__item"
-              style="font-family: Helvetica"
-              >Work</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="contact.html"
-              role="menu item"
-              class="navigation-list__item"
-              style="font-family: Helvetica"
-              >Contact</a
-            >
-          </li>
-           <li role="resume">
-            <a href onclick="window.open('img/Resume-Allan-Zheng_1_.docx', '_blank')" role="menuitem"
-              class="navigation-list__item"
-              style="font-family:Helvetica">Resume</a>
-          </li>
+            <a href="index.html" role="menuitem" class="btn btn-primary navigation-list__item nav-link" style="font-family: Helvetica">Home</a>
+        </li>
+        <li role="presentation">
+            <a href="about.html" role="menuitem" class="btn btn-primary navigation-list__item nav-link" style="font-family: Helvetica">About</a>
+        </li>
+        <li role="presentation">
+            <a href="work.html" role="menuitem" class="btn btn-primary navigation-list__item nav-link" style="font-family: Helvetica">Work</a>
+        </li>
+        <li role="presentation">
+            <a href="contact.html" role="menuitem" class="btn btn-primary navigation-list__item nav-link" style="font-family: Helvetica">Contact</a>
+        </li>
+        <li role="resume">
+            <a onclick="window.open('img/Resume-Allan-Zheng.pdf', '_blank')" role="menuitem" class="btn btn-primary navigation-list__item nav-link" style="font-family:Helvetica">Resume</a>
+        </li>        
         </ul>
       </nav>
     </header>

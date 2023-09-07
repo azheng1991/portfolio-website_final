@@ -1,117 +1,173 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allan Zheng - Contact Me!</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
-      />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700"
-      rel="stylesheet"
-      />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-  </head>
-  <body>
-    <header class="page-header">
 
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item" style="font-family:Helvetica">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item" style="font-family:Helvetica">About</a>
-          </li>
-          <li role="presentation">
-            <a
-              href="work.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item"
-              style="font-family:Helvetica">Work</a>
-          </li>
-          <li role="presentation">
-            <a
-              href="contact.html"
-              role="menuitem"
-              class="navigation-list__item--active"
-              style="font-family:Helvetica">Contact</a>
-          </li>
-          <li role="resume">
-            <a href onclick="window.open('img/Resume-Allan-Zheng_1_.docx', '_blank')" role="menuitem"
-              class="navigation-list__item"
-              style="font-family:Helvetica">Resume</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allan Zheng - Contact Me!</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+    }
 
-    <div class="contact-container">
-      <h1 class="header">Contact Me!</h1>
-      <div class="form-container">
-        <div class="container">
-          <form action="https://formspree.io/mlepzqvv" method="POST">
-            <ul class="flex-outer">
-              <li>
-                <label for="first-name" style="font-family:Helvetica">First Name</label>
-                <input type="text" id="first-name" name="first name"
-                  style="font-family: Helvetica">
-              </li>
-              <br>
-              <li>
-                <label for="last-name" style="font-family:Helvetica">Last Name</label>
-                <input type="text" id="last-name" name="last name"
-                  style="font-family: Helvetica">
-              </li>
-              <br>
-              <li>
-                <label for="email" style="font-family:Helvetica">Email</label>
-                <input type="email" id="email" name="email"
-                   style="font-family: Helvetica">
-              </li>
-              <br>
-              <li>
-                <label for="phone" style="font-family:Helvetica">Phone</label>
-                <input type="tel" id="phone" name="phone"
-                   style="font-family: Helvetica">
-              </li>
-              <br>
-              <li>
-                <label for="message" style="font-family:Helvetica">Message</label>
-                <textarea rows="6" id="message" name="message"
-                   style="font-family: Helvetica"></textarea></textarea>
-              </li>
-            </form>
-            <br>
-            <button type="submit" style="font-family:Helvetica">Send</button>
-          </form>
-        </div>
+    .contact-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
 
-      
-        <br>
-        <br>
+    h1.header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-        <footer class="page-footer">
-          <p style="font-family:Helvetica">Find me on</p>
-          <a href="https://github.com/azheng1991">
-            <img src="img/github_icon.svg" alt="github" />
-          </a>
-          <a href="mailto:azheng34@outlook.com">
-            <img src="img/email.svg" alt="email" />
-          </a>
-          <a href="https://www.linkedin.com/in/zhengallan">
-            <img src="img/linkedin_icon.svg" alt="linkedin" />
-          </a>
-          <p style="font-family: Helvetica">Phone Number: (857)-231-3760</P>
-        </footer>
-        <script src="js/tota11y.min.js"></script>
-      </body>
-    </html>
+    .flex-outer {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .flex-outer li {
+      margin-bottom: 15px;
+    }
+
+    .form-item {
+      display: flex;
+      align-items: center;
+      /* This ensures vertical alignment if needed */
+    }
+
+    .form-item label {
+      flex-basis: 100px !important;
+      /* Reduced width */
+      flex-shrink: 0 !important;
+      margin-right: 10px !important;
+    }
+
+    .form-item input,
+    .form-item textarea {
+      flex-grow: 1 !important;
+    }
+
+
+
+
+    .flex-outer textarea {
+      resize: vertical;
+    }
+
+    .flex-outer button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .flex-outer button:hover {
+      background-color: #555;
+    }
+      /* Copy the styles from the first HTML here */
+      a:hover, p:hover, li:hover {
+            transform: scale(1.1);
+        }
+        .navigation-list__item {
+            text-decoration: none;
+            display: inline-block;
+        }
+        .navigation-list__item:hover {
+            text-decoration: none;
+        }
+        .navigation-list__item[role="menuitem"] {
+            cursor: pointer;
+            color: #fff;
+        }
+        /* Add styles for the navigation links */
+.nav-link {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-family: Helvetica; /* You can add this style to avoid repetition */
+}
+
+/* Style for anchor tags when hovered */
+.nav-link:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+  </style>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item" style="font-family:Helvetica">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item" style="font-family:Helvetica">About</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item" style="font-family:Helvetica">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item--active"
+            style="font-family:Helvetica; color: white;"">Contact</a>
+        </li>
+        <li role="resume">
+          <a onclick="window.open('img/Resume-Allan-Zheng.pdf', '_blank')" role="menuitem" class="btn btn-primary navigation-list__item nav-link" style="font-family:Helvetica">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="contact-container">
+    <h1 class="header">Contact Me!</h1>
+    <form action="https://formspree.io/mlepzqvv" method="POST">
+      <ul class="flex-outer">
+        <form action="https://formspree.io/mlepzqvv" method="POST">
+          <ul class="flex-outer">
+            <li class="form-item">
+              <label for="first-name" style="font-family:Helvetica">First Name</label>
+              <input type="text" id="first-name" name="first name" style="font-family: Helvetica">
+            </li>
+            <li class="form-item">
+              <label for="last-name" style="font-family:Helvetica">Last Name</label>
+              <input type="text" id="last-name" name="last name" style="font-family: Helvetica">
+            </li>
+            <li class="form-item">
+              <label for="email" style="font-family:Helvetica">Email</label>
+              <input type="email" id="email" name="email" style="font-family: Helvetica">
+            </li>
+            <li class="form-item">
+              <label for="phone" style="font-family:Helvetica">Phone</label>
+              <input type="tel" id="phone" name="phone" style="font-family: Helvetica">
+            </li>
+            <li class="form-item">
+              <label for="message" style="font-family:Helvetica">Message</label>
+              <textarea rows="6" id="message" name="message" style="font-family: Helvetica"></textarea>
+            </li>
+            <li>
+              <button type="submit" style="font-family:Helvetica">Send</button>
+            </li>
+          </ul>
+        </form>
+
+  </div>
+
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

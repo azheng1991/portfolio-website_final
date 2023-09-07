@@ -12,16 +12,34 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
       />
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      
     <link
       href="https://fonts.googleapis.com/css?family=Sofia"
       rel="stylesheet"
       />
     <link rel="stylesheet" type="text/css" href="css/style.production.css" />
     <style>
-     a:hover, p:hover, li:hover {
-    transform: scale(1.1);
+      a:hover, p:hover, li:hover {
+     transform: scale(1.1);
+ }
+ /* Remove underlines from anchor tags */
+.navigation-list__item {
+    text-decoration: none; /* remove underline */
+    display: inline-block; /* ensure consistent display for all buttons */
 }
-  </style>
+
+/* Style for anchor tags when hovered */
+.navigation-list__item:hover {
+    text-decoration: none; /* remove underline when hovered */
+}
+
+/* Ensure consistent appearance for anchor tags without href */
+.navigation-list__item[role="menuitem"] {
+    cursor: pointer;
+    color: #fff; /* You can set this to any color to make it consistent with other buttons */
+}
+
+   </style>
   </head>
 
   <body>
@@ -99,34 +117,26 @@
 
               <header class="page-header">
                 <nav class="main-navigation page-header__item">
-                  <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                      <a
-                        href="index.html"
-                        role="menuitem"
-                        class="navigation-list__item navigation-list__item--active"
-                        style="font-family:Helvetica; pointer-events: none;">Home</a>
-                    </li>
-                    <li role="presentation">
-                      <a href="about.html" role="menuitem"
-                        class="navigation-list__item" style="font-family:Helvetica; pointer-events: none;">About</a>
-                    </li>
-                    <li role="presentation">
-                      <a href="work.html" role="menuitem"
-                        class="navigation-list__item" style="font-family:Helvetica; pointer-events: none;">Work</a>
-                    </li>
-                    <li role="presentation">
-                      <a href="contact.html" role="menuitem"
-                        class="navigation-list__item" style="font-family:Helvetica; pointer-events: none;">Contact</a>
-                      <li role="resume">
-                        <a href
-                          onclick="window.open('img/Resume-Allan-Zheng_1_.docx',
-                          '_blank')" role="menuitem"
-                          class="navigation-list__item" style="font-family:Helvetica; pointer-events: none;">Resume</a>
-                      </li>
+                    <ul role="menubar" class="navigation-list">
+                        <li role="presentation">
+                            <a href="index.html" role="menuitem" class="btn btn-primary navigation-list__item navigation-list__item--active" style="font-family:Helvetica">Home</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="about.html" role="menuitem" class="btn btn-primary navigation-list__item" style="font-family:Helvetica">About</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="work.html" role="menuitem" class="btn btn-primary navigation-list__item" style="font-family:Helvetica">Work</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="contact.html" role="menuitem" class="btn btn-primary navigation-list__item" style="font-family:Helvetica">Contact</a>
+                        </li>
+                        <li role="resume">
+                          <a onclick="window.open('img/Resume-Allan-Zheng.pdf', '_blank')" role="menuitem" class="btn btn-primary navigation-list__item nav-link" style="font-family:Helvetica">Resume</a>
+                        </li>
                     </ul>
-                  </nav>
-                </header>              
+                </nav>
+            </header>
+            
 
                 <div class="index-container">
 
@@ -150,7 +160,7 @@
 
                     <div class="parent">
                       <ul class="goals">
-                        <li class="w3-container w3-center w3-animate-top" style="font-family: Helvetica">-Data Structures/Algorithms Through Leetcode practice in Python</li>
+                        <li class="w3-container w3-center w3-animate-top hover-effect" style="font-family: Helvetica">-Data Structures/Algorithms Through Leetcode practice in Python</li>
 
                         <li class="w3-container w3-center w3-animate-top" style="font-family: Helvetica">-SQL through both work and school</li>
 
@@ -163,7 +173,8 @@
                     <div class="w3-container w3-center w3-animate-bottom" style="font-family: Helvetica">
                       My goal is to continuously grow my technical acumen and further develop myself in the Computer Science industry.
                     </div>
-        
+                    <br>
+                    <br>
                     <footer class="page-footer">
                       <p style="font-family: Helvetica">Find me on</p>
                       <a href="https://github.com/azheng1991">
